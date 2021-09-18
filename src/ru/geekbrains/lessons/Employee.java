@@ -6,7 +6,7 @@ public class Employee {
     private String email;
     private String phone;
     private int salary;
-    private int age;
+    public int age;
 
     public Employee(String name,String position,String email,String phone,int salary,int age){
         this.name = name;
@@ -16,13 +16,16 @@ public class Employee {
         this.salary = salary;
         this.age = age;
         System.out.println("Создать сотрудника:");
-        System.out.println("name = " + name);
-        System.out.println("position = " + position);
-        System.out.println("email = " + email);
-        System.out.println("phone = " + phone);
-        System.out.println("salary = " + salary);
-        System.out.println("age = " +age);
+        print();
     }
 
+    public void print(){
+        System.out.print("name = " + name);
+        System.out.print(" position = " + position);
+        System.out.print(" email = " + email);
+        System.out.print(" phone = " + phone);
+        System.out.print(" salary = " + salary);
+        System.out.println(" age = " +age);
+    }
 
 }
